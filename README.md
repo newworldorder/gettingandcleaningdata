@@ -20,7 +20,7 @@
 ## Function Description 
 - `make_tidy(dir = "UCI HAR Dataset/")` assumes the directory name (`dir`) is unchanged.  If an absolute path is provided, the function can be run from anywhere on the filesystem. 
 - `make_tidy` combines the data and test set X values (measurements), y values (activity labels), subject identifiers into a single table keeping only those X values that correspond to a _mean_ or _standard deviation_.  The y values are replaced with the character representations in `activity_labels.txt`  This data frame is stored `result$d1`.
-- `make_tidy` for each (activity label, subject id) pair computes the mean for each measurement still in `result$d1`.  The names of these columns have been modified to be prepended with `MEAN_` to indicate they correspond to means.  The result of this computation is stored in `result$d2`.
+- `make_tidy` for each _valid_ (activity label, subject id) pair computes the mean for each measurement still in `result$d1`.  The names of these columns have been modified to be prepended with `MEAN_` to indicate they correspond to means.  The result of this computation is stored in `result$d2`.
 
 ## Fields in New Dataset (result$d2)
 - `activity` corresponds to the verbal description of the activity label
