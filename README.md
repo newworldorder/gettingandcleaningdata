@@ -12,7 +12,7 @@
 > source('run_analysis.R')
 > result <- make_tidy()
 ```
-3. To observe the dataset of interest enter the following command
+- To observe the dataset of interest enter the following command
 ```
 > result$d2 
 ```
@@ -25,4 +25,4 @@
 ## Fields in New Dataset (result$d2)
 - `activity` corresponds to the verbal description of the activity label
 - `subject` corresponds to the subject responsible for producing the data in a given row
-- `MEAN_*` corresponds to the mean of measurements from the original UCI that corresponded to means or standard deviations. (see `features.txt` for the features containing case insensitive `mean` and `std` strings in the name)
+- `MEAN_*` corresponds to the mean of measurements from the original UCI that corresponded to means or standard deviations. (see `UCI HAR Dataset/features.txt` for the features containing case insensitive `mean` and `std` strings in the name)
